@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contactformulier</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            .copyright {
+            text-align: center;
+            margin: auto;
+            background-color: black;
+            color: aliceblue;
+          }
+
+          footer {
+            max-height: 200px;
+            text-align: center;
+            font-size: x-small;
+            border: 1px solid;
+          }
+
+          .container-sm {
+            padding: 20px;
+          }
+        </style>
+      </head>
+    <body>
+      <!--NAVBAR BOOTSTRAP-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Wie is Tiffany?</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="overmij.html">Over mij</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="container-sm">
+          <p>Wil je graag in contact treden, of heb je vragen/opmerkingen?<br>
+          Vul dan het formulier hieronder in, en ik probeer zo snel mogelijk te reageren!</p>
+         <form action="https://formspree.io/f/xeoqgjwl" method="post">
+           <div class="mb-3">
+               <label for="InputName" class="form-label">Naam</label>
+               <input type="text" class="form-control" id="InputName" name="Naam" placeholder="Jan Janssen">
+             </div>
+           <div class="mb-3">
+              <label for="InputEmail1" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="InputEmail1" name="E-mail" placeholder="janjanssen@mail.com">
+            </div>
+            <div class="mb-3">
+                <label for="FormControlTextarea1" class="form-label">Bericht</label>
+                <textarea class="form-control" id="FormControlTextarea1" rows="3" name="Bericht" placeholder="Ik typ hier mijn bericht."></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Verzenden</button>
+          </form>
+        </div>
+        <footer>
+          <p class="copyright">© 2024 Tiffany Dooghe. Alle rechten voorbehouden</p>
+        </footer>
+    </body>
+</html>
